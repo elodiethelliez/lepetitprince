@@ -1,0 +1,216 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+
+ul{ 
+  margin: 0;
+  list-style: none;
+  font-size: 35pt;
+  font-family: memimas-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  /*font-family: freight-big-pro, serif;*/
+  font-weight: 500;
+  font-style: normal;
+  
+  transform-style: preserve-3d;
+  animation: three-dimensions-circle 30s linear infinite;
+}
+
+li{
+  float: center;
+  position: absolute;
+}
+
+p {
+  font-size: 15pt;
+  font-family: memimas-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+li#on {
+   transform: translate(-50%, -50%) rotate(0deg) translateY(-450px) rotateX(90deg);
+}
+li#ne {
+   transform: translate(-50%, -50%) rotate(25deg) translateY(-450px) rotateX(90deg);
+}
+li#voit {
+   transform: translate(-50%, -50%) rotate(50deg) translateY(-450px) rotateX(90deg);
+}
+li#bien {
+   transform: translate(-50%, -50%) rotate(75deg) translateY(-450px) rotateX(90deg);
+}
+li#q {
+   transform: translate(-50%, -50%) rotate(100deg) translateY(-450px) rotateX(90deg);
+}
+li#le {
+   transform: translate(-50%, -50%) rotate(125deg) translateY(-450px) rotateX(90deg);
+}
+li#c {
+   transform: translate(-50%, -50%) rotate(150deg) translateY(-450px) rotateX(90deg);
+}
+li#essentiel {
+   transform: translate(-50%, -50%) rotate(200deg) translateY(-450px) rotateX(90deg);
+}
+li#est {
+   transform: translate(-50%, -50%) rotate(225deg) translateY(-450px) rotateX(90deg);
+}
+li#invisible {
+   transform: translate(-50%, -50%) rotate(250deg) translateY(-450px) rotateX(90deg);
+}
+li#pour {
+   transform: translate(-50%, -50%) rotate(275deg) translateY(-450px) rotateX(90deg);
+}
+li#les {
+   transform: translate(-50%, -50%) rotate(300deg) translateY(-450px) rotateX(90deg);
+}
+li#yeux {
+   transform: translate(-50%, -50%) rotate(325deg) translateY(-450px) rotateX(90deg);
+}
+
+ul#english{ 
+  margin: 0;
+  list-style: none;
+  font-size: 35pt;
+  font-family: memimas-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  transform-style: preserve-3d;
+  animation: three-dimensions-circle-2 30s linear infinite;
+}
+
+li#it {
+   transform: translate(-50%, -50%) rotate(0deg) translateY(-450px) rotateX(90deg);
+}
+li#is {
+   transform: translate(-50%, -50%) rotate(17deg) translateY(-450px) rotateX(90deg);
+}
+li#only {
+   transform: translate(-50%, -50%) rotate(35deg) translateY(-450px) rotateX(90deg);
+}
+li#with {
+   transform: translate(-50%, -50%) rotate(55deg) translateY(-450px) rotateX(90deg);
+}
+li#the {
+   transform: translate(-50%, -50%) rotate(73deg) translateY(-450px) rotateX(90deg);
+}
+li#heart {
+   transform: translate(-50%, -50%) rotate(92deg) translateY(-450px) rotateX(90deg);
+}
+li#that {
+   transform: translate(-50%, -50%) rotate(111deg) translateY(-450px) rotateX(90deg);
+}
+li#one {
+   transform: translate(-50%, -50%) rotate(130deg) translateY(-450px) rotateX(90deg);
+}
+li#can {
+   transform: translate(-50%, -50%) rotate(150deg) translateY(-450px) rotateX(90deg);
+}
+li#see {
+   transform: translate(-50%, -50%) rotate(168deg) translateY(-450px) rotateX(90deg);
+}
+li#r {
+   transform: translate(-50%, -50%) rotate(188deg) translateY(-450px) rotateX(90deg);
+}
+li#what {
+   transform: translate(-50%, -50%) rotate(211deg) translateY(-450px) rotateX(90deg);
+}
+li#i {
+   transform: translate(-50%, -50%) rotate(228deg) translateY(-450px) rotateX(90deg);
+}
+li#ess {
+   transform: translate(-50%, -50%) rotate(247deg) translateY(-450px) rotateX(90deg);
+}
+li#s {
+   transform: translate(-50%, -50%) rotate(266deg) translateY(-450px) rotateX(90deg);
+}
+li#inv {
+   transform: translate(-50%, -50%) rotate(285deg) translateY(-450px) rotateX(90deg);
+}
+li#to {
+   transform: translate(-50%, -50%) rotate(304deg) translateY(-450px) rotateX(90deg);
+}
+li#t {
+   transform: translate(-50%, -50%) rotate(323deg) translateY(-450px) rotateX(90deg);
+}
+li#eye {
+   transform: translate(-50%, -50%) rotate(342deg) translateY(-450px) rotateX(90deg);
+}
+
+
+ @keyframes three-dimensions-circle {
+   0% {
+     transform: rotateX(-100deg) rotateY(15deg) rotate(0);
+  }
+   100% {
+     transform: rotateX(-100deg) rotateY(15deg) rotate(-360deg); //mess with these to make cool things happen
+  }
+}
+
+ @keyframes three-dimensions-circle-2 {
+   0% {
+     transform: rotateX(-100deg) rotateY(-15deg) rotate(0);
+  }
+   100% {
+     transform: rotateX(-100deg) rotateY(-15deg) rotate(-360deg); 
+  }
+}
+
+
+input[type=checkbox] {
+   -webkit-appearance: none;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   border: none;
+   display: block;
+   transition: color 1s;
+}
+
+input[type=checkbox]:checked ~ .section-2 {
+   display: block;
+}
+input[type=checkbox]:checked ~ .section-1 {
+   display: none;
+}
+
+
+ .section-1 {
+   display: block;
+   color: transparent;
+   z-index: 10;
+   position: fixed;
+   pointer-events: none;
+   padding: 40px;
+}
+
+#click-1 {
+  color:white;
+}
+
+#click-2 {
+  color:transparent;
+}
+
+ .section-2 {
+   display: none;
+   color: white;
+   z-index: 10;
+   position: fixed;
+   pointer-events: none;
+   padding: 40px;
+}
