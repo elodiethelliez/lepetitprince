@@ -4,8 +4,23 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+  background: #000;
+  background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/15/89/FkiTP4.jpeg");
+
 }
+
+p {
+  font-size: 15pt;
+  font-family: memimas-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+/*Credit to Naoya for ring letters inspiration https://codepen.io/nxworld/pen/LbKxOJ*/
 
 ul{ 
   margin: 0;
@@ -26,17 +41,6 @@ ul{
 li{
   float: center;
   position: absolute;
-}
-
-p {
-  font-size: 15pt;
-  font-family: memimas-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  
-  font-weight: 500;
-  font-style: normal;
-  text-align: center;
 }
 
 li#on {
@@ -169,6 +173,9 @@ li#eye {
 }
 
 
+/* Credits to Remi Lacorne for "Click anywhere page toggle"
+https://codepen.io/rlacorne/pen/wvWJxM*/
+
 input[type=checkbox] {
    -webkit-appearance: none;
    height: 100%;
@@ -187,7 +194,6 @@ input[type=checkbox]:checked ~ .section-2 {
 input[type=checkbox]:checked ~ .section-1 {
    display: none;
 }
-
 
  .section-1 {
    display: block;
